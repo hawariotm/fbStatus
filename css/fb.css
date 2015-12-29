@@ -1,0 +1,120 @@
+* {
+    box-sizing: unset;
+}
+
+body {
+    font-family: "Raleway", "sans-serif";
+}
+
+#statusbox {
+    position: fixed;
+    left: 30%;
+    top: 25%;
+    height: 300px;
+    width: 400px;
+    border: 1px solid aqua;
+}
+
+#statheader {
+    position: relative;
+    height: 50px;
+    left: 0;
+    right: 0;
+}
+
+#statfooter {
+    position: relative;
+    height: 50px;
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    float: left;
+    height: 50px;
+    width: 50px;
+    padding: 3px;
+}
+
+.name {
+    font-size: 15px;
+    float: left;
+    display: inline-block;
+    height: 50px;
+    left: 56px;
+    right: 0;
+    padding: 3px;
+}
+
+.link {
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+#time {
+    font-size: 73%;
+    color: rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+.menudown {
+    padding: 8px;
+    padding-right: 6px;
+    font-size: 77%;
+    float: right;
+    color: black;
+}
+
+#content {
+    height: 200px;
+    position: relative;
+    padding: 3px;
+}
+
+#statfooter {
+    color: #9197A3;
+    padding: 3px;
+  
+
+}
+
+.link1 {
+    float: left;
+    margin-left: 23px;
+}
+
+.link2 {
+    display: inline-block;
+    margin-left: 110px;
+}
+
+.link3 {
+    float: right;
+    margin-right: 23px;
+}
+
+.like {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    left: 0;
+    font-size: 11px;
+}
+
+.show {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    display: block;
+    height: 20px;
+    margin-left: 20px;
+    font-size: 67%;
+}
+
+.show a {
+    color: rgba(0, 0, 0, 0.8);
+}
