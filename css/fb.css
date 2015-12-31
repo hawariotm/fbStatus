@@ -1,10 +1,11 @@
 #pageheader{
-    position: relative;
+    position: fixed;
     top:0;
     left: 0;
     right: 0;
     height: 50px;
     background-color: #3B5998;
+    z-index:3;
 
 }
 #pageheader .logo
@@ -46,16 +47,18 @@ top: 12px;
 }
 .search
 {
-    position: absolute;
+    position: relative;
     display: inline-block;
     left: 101px;
     top: 9px;
      right: 457px;
 }
+
+
 .textmsg {
    height: 28px;
-  width: 489px;
-    color: #000;
+width: 489px;
+color: #000;
     
     
 }
@@ -82,12 +85,10 @@ top: 12px;
 }
 #container
 {
-    position: absolute;
-    top: 50px;
-    bottom: 0;
-    left: 26%;
+
     width: 500px;
-    box-shadow: 0px 0px 5px #888;
+    overflow: auto; 
+    margin: 0 auto;
 
 }
 .profile
@@ -107,18 +108,25 @@ top: 12px;
 body {
     font-family: "Raleway", "sans-serif";
 }
+.statusbox1{
+    height: 150px;
+    width:400px;
 
-#statusbox {
-    position: fixed;
-    left: 30%;
-    top: 25%;
+    box-shadow: 0px 0px 5px #888;
+    margin: 71px 0 13px 0;
+    margin-left: 11px;
+ }
+
+.statusbox2 {
     height: 300px;
     width: 400px;
     box-shadow: 0px 0px 5px #888;
+    margin: 20px 0 13px 0;
+    /*margin: 0 auto;*/
+    margin-left: 11px;
     
 }
-
-#statheader {
+.statheader {
     position: relative;
     height: 50px;
     left: 0;
@@ -126,7 +134,7 @@ body {
     
 }
 
-#statfooter {
+.statfooter {
     position: relative;
     height: 50px;
     left: 0;
@@ -141,7 +149,7 @@ body {
     padding: 3px;
 }
 
-#statusbox  .name {
+.statusbox2  .name {
     font-size: 15px;
     float: left;
     display: inline-block;
@@ -149,7 +157,9 @@ body {
     left: 56px;
     right: 0;
     padding: 3px;
+    font-weight: bold;
 }
+
 
 .link {
     color: #000;
@@ -159,7 +169,7 @@ a {
     text-decoration: none;
 }
 
-#time {
+.time {
     font-size: 73%;
     color: rgba(0, 0, 0, 0.3);
     display: block;
@@ -173,14 +183,16 @@ a {
     color: black;
 }
 
-#content {
+.content {
     height: 200px;
     position: relative;
     padding: 3px;
+    margin-left: -6px;
+    margin-right: -6px;
 
 }
 
-#statfooter {
+.statfooter {
     color: #9197A3;
     padding: 3px;
   
@@ -224,6 +236,59 @@ a {
 .show a {
     color: rgba(0, 0, 0, 0.8);
 }
-#content img{
+.content img{
 	box-shadow: -3px 0px 18px #888;
+}
+.container-1{
+  width: 20px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: absolute;
+ top: 29%;
+left: 95%;
+}
+.container-1 .glyphicon{
+  
+  z-index: 1;
+  color: #4f5b66;
+}
+.head
+{
+  position: relative;
+height: 30px;  
+ box-shadow: 0px 0px 2px;
+}
+.stat{
+    margin-top: 2px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: black;
+    font-size: 12px;
+}
+.head .glyphicon
+{
+color: #3B5998
+
+}
+.textarea
+{
+    height: 90px;
+}
+.txtimg
+{
+    width: 54px;
+height: 90px;
+display: inline-block;
+float: left;
+}
+.txtimg img{
+
+    margin-left: 7px;
+    margin-top: 21px;
+    border-radius: 4px;
+}
+.typearea{
+    height: 60px;
+background-color: white;
+margin-left: 50px;
 }
